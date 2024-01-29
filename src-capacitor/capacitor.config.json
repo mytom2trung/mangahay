@@ -1,0 +1,23 @@
+{
+  "appId": "com.animesub.mangahay",
+  "appName": "MangaHay",
+  "npmClient": "pnpm",
+  "webDir": "www",
+  "plugins": {
+    "CapacitorCookies": {
+      "enabled": true
+    },
+    "CapacitorUpdater": {
+      "autoUpdate": false,
+      "updateUrl": "https://services.ophimne.xyz/v1/auto_update",
+      "statsUrl": ""
+    }
+  },
+  "server": {
+    "androidScheme": "https",
+    "url": "http://192.168.31.231:9500"
+  },
+  "deepLinks": {
+    "scheme": "com.animesub.mangahay"
+  }
+}

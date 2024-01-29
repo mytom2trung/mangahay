@@ -1,0 +1,63 @@
+{
+  "name": "raiku-pgs",
+  "private": false,
+  "version": "0.1.10",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/plugin.cjs",
+  "module": "./dist/plugin.js",
+  "types": "./dist/plugin.d.ts",
+  "exports": {
+    "./plugin": {
+      "import": "./dist/plugin.js",
+      "require": "./dist/plugin.cjs",
+      "types": "./dist/plugin.d.ts"
+    },
+    "./thread": {
+      "import": "./dist/thread.js",
+      "require": "./dist/thread.cjs",
+      "types": "./dist/thread.d.ts"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "plugin": [
+        "dist/plugin.d.ts"
+      ],
+      "thread": [
+        "dist/thread.d.ts"
+      ]
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "test": "vitest",
+    "build": "vite build && tsc --emitDeclarationOnly",
+    "prepublish": "pnpm build",
+    "release": "bumpp package.json --commit \"chore: release npm `raiku-pgs` `%s`\" --tag \"raiku-pgs@%s\" && tsx ./scripts/package-module.ts && pnpm publish --no-git-checks && git checkout HEAD -- ./package.json"
+  },
+  "devDependencies": {
+    "@rollup/plugin-replace": "^5.0.5",
+    "bumpp": "^9.2.1",
+    "client-ext-animevsub-helper": "^1.0.24",
+    "esbuild": "^0.19.8",
+    "happy-dom": "^12.10.3",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0",
+    "vite-plugin-replace": "^0.1.1",
+    "vitest": "^0.34.6",
+    "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@fcanvas/communicate": "^1.1.5",
+    "chalk": "^5.3.0",
+    "cheerio": "1.0.0-rc.12",
+    "htmlparser2": "^9.0.0",
+    "semver": "^7.5.4",
+    "uuid": "^9.0.1"
+  },
+  "peerDependencies": {
+    "client-ext-animevsub-helper": "^1.0.24"
+  }
+}
