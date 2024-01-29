@@ -230,7 +230,7 @@ importers:
         version: 5.1.1(@babel/core@7.23.2)(@babel/preset-env@7.23.2)(babel-loader@9.1.3)(cypress@12.17.0)(eslint-plugin-cypress@2.15.1)(vite@2.9.16)(webpack@5.89.0)
       '@quasar/quasar-app-extension-testing-unit-vitest':
         specifier: ^0.4.0
-        version: 0.4.0(@vitest/ui@0.31.0)(@vue/test-utils@2.4.1)(quasar@2.12.2)(typescript@5.0.4)(vite@2.9.16)(vitest@0.31.0)(vue@3.3.8)
+        version: 0.4.0(@vitest/ui@0.34.7)(@vue/test-utils@2.4.1)(quasar@2.12.2)(typescript@5.0.4)(vite@2.9.16)(vitest@0.31.0)(vue@3.3.8)
       '@tachibana-shin/eslint-config':
         specifier: 1.0.7
         version: 1.0.7(eslint@8.33.0)(typescript@5.0.4)
@@ -283,8 +283,8 @@ importers:
         specifier: ^0.55.2
         version: 0.55.2
       '@vitest/ui':
-        specifier: ^0.31.0
-        version: 0.31.0(vitest@0.31.0)
+        specifier: ^0.34.7
+        version: 0.34.7(vitest@0.31.0)
       '@vitest/web-worker':
         specifier: ^0.30.1
         version: 0.30.1(vitest@0.31.0)
@@ -422,7 +422,7 @@ importers:
         version: 0.8.0(vite@2.9.16)(vue-router@4.2.5)(vue@3.3.8)
       vitest:
         specifier: ^0.31.0
-        version: 0.31.0(@vitest/ui@0.31.0)(happy-dom@12.10.3)(jsdom@22.1.0)(sass@1.32.11)
+        version: 0.31.0(@vitest/ui@0.34.7)(happy-dom@12.10.3)(jsdom@22.1.0)(sass@1.32.11)
       vitest-fetch-mock:
         specifier: ^0.2.2
         version: 0.2.2(vitest@0.31.0)
@@ -498,7 +498,7 @@ importers:
         version: 0.1.1(vite@4.5.0)
       vitest:
         specifier: ^0.34.6
-        version: 0.34.6(@vitest/ui@0.31.0)(happy-dom@12.10.3)(jsdom@22.1.0)(sass@1.32.11)
+        version: 0.34.6(@vitest/ui@0.34.7)(happy-dom@12.10.3)(jsdom@22.1.0)(sass@1.32.11)
       vue-router:
         specifier: ^4.2.5
         version: 4.2.5(vue@3.3.8)
@@ -5758,7 +5758,7 @@ packages:
       - webpack
     dev: true
 
-  /@quasar/quasar-app-extension-testing-unit-vitest@0.4.0(@vitest/ui@0.31.0)(@vue/test-utils@2.4.1)(quasar@2.12.2)(typescript@5.0.4)(vite@2.9.16)(vitest@0.31.0)(vue@3.3.8):
+  /@quasar/quasar-app-extension-testing-unit-vitest@0.4.0(@vitest/ui@0.34.7)(@vue/test-utils@2.4.1)(quasar@2.12.2)(typescript@5.0.4)(vite@2.9.16)(vitest@0.31.0)(vue@3.3.8):
     resolution: {integrity: sha512-eyzdUdmZiCueNS+5nedjMmzdbpCetSrtdGIwW6KplW1dTzRbLiNvYUjpBOxQGmJCgEhWy9zuswJ7MZ/bTql24Q==}
     engines: {node: '>= 12.22.1', npm: '>= 6.14.12', yarn: '>= 1.17.3'}
     peerDependencies:
@@ -5771,14 +5771,14 @@ packages:
       '@vitest/ui':
         optional: true
     dependencies:
-      '@vitest/ui': 0.31.0(vitest@0.31.0)
+      '@vitest/ui': 0.34.7(vitest@0.31.0)
       '@vue/test-utils': 2.4.1(vue@3.3.8)
       happy-dom: 11.2.0
       lodash-es: 4.17.21
       quasar: 2.12.2
       vite-jsconfig-paths: 2.0.1(vite@2.9.16)
       vite-tsconfig-paths: 4.2.1(typescript@5.0.4)(vite@2.9.16)
-      vitest: 0.31.0(@vitest/ui@0.31.0)(happy-dom@12.10.3)(jsdom@22.1.0)(sass@1.32.11)
+      vitest: 0.31.0(@vitest/ui@0.34.7)(happy-dom@12.10.3)(jsdom@22.1.0)(sass@1.32.11)
       vue: 3.3.8(typescript@5.0.4)
     transitivePeerDependencies:
       - supports-color
@@ -6944,7 +6944,7 @@ packages:
       vite: ^2.5.10
       vue: ^3.2.25
     dependencies:
-      vite: 2.9.16(sass@1.32.11)
+      vite: 2.9.16(sass@1.32.12)
       vue: 3.3.8(typescript@5.0.4)
 
   /@vitest/expect@0.31.0:
@@ -7008,19 +7008,19 @@ packages:
       tinyspy: 2.1.1
     dev: true
 
-  /@vitest/ui@0.31.0(vitest@0.31.0):
-    resolution: {integrity: sha512-Dy86l6r3/dbJposgm7w+oqb/15UWJ0lDBbEQaS1ived3+0CTaMbT8OMkUf9vNBkSL47kvBHEBnZLa5fw5i9gUQ==}
+  /@vitest/ui@0.34.7(vitest@0.31.0):
+    resolution: {integrity: sha512-iizUu9R5Rsvsq8FtdJ0suMqEfIsIIzziqnasMHe4VH8vG+FnZSA3UAtCHx6rLeRupIFVAVg7bptMmuvMcsn8WQ==}
     peerDependencies:
       vitest: '>=0.30.1 <1'
     dependencies:
-      '@vitest/utils': 0.31.0
-      fast-glob: 3.3.0
-      fflate: 0.7.4
+      '@vitest/utils': 0.34.7
+      fast-glob: 3.3.2
+      fflate: 0.8.1
       flatted: 3.2.7
       pathe: 1.1.1
       picocolors: 1.0.0
       sirv: 2.0.3
-      vitest: 0.31.0(@vitest/ui@0.31.0)(happy-dom@12.10.3)(jsdom@22.1.0)(sass@1.32.11)
+      vitest: 0.31.0(@vitest/ui@0.34.7)(happy-dom@12.10.3)(jsdom@22.1.0)(sass@1.32.11)
     dev: true
 
   /@vitest/utils@0.31.0:
@@ -7039,13 +7039,21 @@ packages:
       pretty-format: 29.7.0
     dev: true
 
+  /@vitest/utils@0.34.7:
+    resolution: {integrity: sha512-ziAavQLpCYS9sLOorGrFFKmy2gnfiNU0ZJ15TsMz/K92NAPS/rp9K4z6AJQQk5Y8adCy4Iwpxy7pQumQ/psnRg==}
+    dependencies:
+      diff-sequences: 29.6.3
+      loupe: 2.3.6
+      pretty-format: 29.7.0
+    dev: true
+
   /@vitest/web-worker@0.30.1(vitest@0.31.0):
     resolution: {integrity: sha512-fHe81VYe/Ch6VrM83UUB874ZZ2qzbDAee1MrGwPd3KN6btGfBdeCSu8AO+lvxVxUVQFw7dNrMRnIRkYYtf3YUg==}
     peerDependencies:
       vitest: '*'
     dependencies:
       debug: 4.3.4(supports-color@8.1.1)
-      vitest: 0.31.0(@vitest/ui@0.31.0)(happy-dom@12.10.3)(jsdom@22.1.0)(sass@1.32.11)
+      vitest: 0.31.0(@vitest/ui@0.34.7)(happy-dom@12.10.3)(jsdom@22.1.0)(sass@1.32.11)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -7368,7 +7376,7 @@ packages:
     dependencies:
       '@vue/compiler-ssr': 3.3.8
       '@vue/shared': 3.3.8
-      vue: 3.3.8(typescript@5.2.2)
+      vue: 3.3.8(typescript@5.0.4)
 
   /@vue/shared@3.3.4:
     resolution: {integrity: sha512-7OjdcV8vQ74eiz1TZLzZP4JwqM5fA94K6yntPS5Z25r9HDuGNzaGdgvwKYq6S+MxwF0TFRwe50fIR/MYnakdkQ==}
@@ -11204,8 +11212,8 @@ packages:
       web-streams-polyfill: 3.2.1
     dev: true
 
-  /fflate@0.7.4:
-    resolution: {integrity: sha512-5u2V/CDW15QM1XbbgS+0DfPxVB+jUKhWEKuuFuHncbk3tEEqzmoXL+2KyOFuKGqOnmdIy0/davWF1CkuwtibCw==}
+  /fflate@0.8.1:
+    resolution: {integrity: sha512-/exOvEuc+/iaUm105QIiOt4LpBdMTWsXxqR0HDF35vx3fmaKzw7354gTilCh5rkzEt8WYyG//ku3h3nRmd7CHQ==}
     dev: true
 
   /figures@3.2.0:
@@ -13350,6 +13358,7 @@ packages:
 
   /loupe@2.3.6:
     resolution: {integrity: sha512-RaPMZKiMy8/JruncMU5Bt6na1eftNoo++R4Y+N2FrxkDVTrGvcyzFTsaGif4QTeKESheMGegbhw6iUAq+5A8zA==}
+    deprecated: Please upgrade to 2.3.7 which fixes GHSA-4q6p-r6v2-jvc5
     dependencies:
       get-func-name: 2.0.2
     dev: true
@@ -16712,6 +16721,7 @@ packages:
     resolution: {integrity: sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==}
     engines: {node: '>=14.17'}
     hasBin: true
+    dev: true
 
   /ua-parser-js@1.0.37:
     resolution: {integrity: sha512-bhTyI94tZofjo+Dn8SN6Zv8nBDvyXTymAdM3LDI/0IboIUwTu1rEhW7v2TfiVsoYWgkQ4kOVqnI8APUFbIQIFQ==}
@@ -17417,7 +17427,6 @@ packages:
       sass: 1.32.12
     optionalDependencies:
       fsevents: 2.3.3
-    dev: true
 
   /vite@4.5.0(@types/node@18.8.0)(sass@1.32.11):
     resolution: {integrity: sha512-ulr8rNLA6rkyFAlVWw2q5YJ91v098AFQ2R0PRFwPzREXOUJQPtFUG0t+/ZikhaOCDqFoDhN6/v8Sq0o4araFAw==}
@@ -17463,12 +17472,12 @@ packages:
       vitest: '>=0.16.0'
     dependencies:
       cross-fetch: 3.1.8
-      vitest: 0.31.0(@vitest/ui@0.31.0)(happy-dom@12.10.3)(jsdom@22.1.0)(sass@1.32.11)
+      vitest: 0.31.0(@vitest/ui@0.34.7)(happy-dom@12.10.3)(jsdom@22.1.0)(sass@1.32.11)
     transitivePeerDependencies:
       - encoding
     dev: true
 
-  /vitest@0.31.0(@vitest/ui@0.31.0)(happy-dom@12.10.3)(jsdom@22.1.0)(sass@1.32.11):
+  /vitest@0.31.0(@vitest/ui@0.34.7)(happy-dom@12.10.3)(jsdom@22.1.0)(sass@1.32.11):
     resolution: {integrity: sha512-JwWJS9p3GU9GxkG7eBSmr4Q4x4bvVBSswaCFf1PBNHiPx00obfhHRJfgHcnI0ffn+NMlIh9QGvG75FlaIBdKGA==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
@@ -17506,7 +17515,7 @@ packages:
       '@vitest/runner': 0.31.0
       '@vitest/snapshot': 0.31.0
       '@vitest/spy': 0.31.0
-      '@vitest/ui': 0.31.0(vitest@0.31.0)
+      '@vitest/ui': 0.34.7(vitest@0.31.0)
       '@vitest/utils': 0.31.0
       acorn: 8.9.0
       acorn-walk: 8.2.0
@@ -17537,7 +17546,7 @@ packages:
       - terser
     dev: true
 
-  /vitest@0.34.6(@vitest/ui@0.31.0)(happy-dom@12.10.3)(jsdom@22.1.0)(sass@1.32.11):
+  /vitest@0.34.6(@vitest/ui@0.34.7)(happy-dom@12.10.3)(jsdom@22.1.0)(sass@1.32.11):
     resolution: {integrity: sha512-+5CALsOvbNKnS+ZHMXtuUC7nL8/7F1F2DnHGjSsszX8zCjWSSviphCb/NuS9Nzf4Q03KyyDRBAXhF/8lffME4Q==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
@@ -17575,7 +17584,7 @@ packages:
       '@vitest/runner': 0.34.6
       '@vitest/snapshot': 0.34.6
       '@vitest/spy': 0.34.6
-      '@vitest/ui': 0.31.0(vitest@0.31.0)
+      '@vitest/ui': 0.34.7(vitest@0.31.0)
       '@vitest/utils': 0.34.6
       acorn: 8.11.2
       acorn-walk: 8.2.0
@@ -17693,7 +17702,7 @@ packages:
       vue: ^3.2.0
     dependencies:
       '@vue/devtools-api': 6.5.0
-      vue: 3.3.8(typescript@5.2.2)
+      vue: 3.3.8(typescript@5.0.4)
 
   /vue-template-compiler@2.7.14:
     resolution: {integrity: sha512-zyA5Y3ArvVG0NacJDkkzJuPQDF8RFeRlzV2vLeSnhSpieO6LK2OVbdLPi5MPPs09Ii+gMO8nY4S3iKQxBxDmWQ==}
@@ -17728,21 +17737,6 @@ packages:
       '@vue/server-renderer': 3.3.8(vue@3.3.8)
       '@vue/shared': 3.3.8
       typescript: 5.0.4
-
-  /vue@3.3.8(typescript@5.2.2):
-    resolution: {integrity: sha512-5VSX/3DabBikOXMsxzlW8JyfeLKlG9mzqnWgLQLty88vdZL7ZJgrdgBOmrArwxiLtmS+lNNpPcBYqrhE6TQW5w==}
-    peerDependencies:
-      typescript: '*'
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      '@vue/compiler-dom': 3.3.8
-      '@vue/compiler-sfc': 3.3.8
-      '@vue/runtime-dom': 3.3.8
-      '@vue/server-renderer': 3.3.8(vue@3.3.8)
-      '@vue/shared': 3.3.8
-      typescript: 5.2.2
 
   /w3c-xmlserializer@4.0.0:
     resolution: {integrity: sha512-d+BFHzbiCx6zGfz0HyQ6Rg69w9k19nviJspaj4yNscGjrHu94sVP+aRm75yEbCh+r2/yR+7q6hux9LVtbuTGBw==}

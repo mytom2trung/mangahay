@@ -146,7 +146,7 @@
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.49.0",
     "@unocss/transformer-directives": "^0.55.2",
-    "@vitest/ui": "^0.31.0",
+    "@vitest/ui": "^0.34.7",
     "@vitest/web-worker": "^0.30.1",
     "@vue-macros/volar": "^0.12.3",
     "@vue/test-utils": "^2.4.1",
